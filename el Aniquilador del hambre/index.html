@@ -7,14 +7,15 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <!-- Carga de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Hoja de estilos personalizada -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container w-100 text-center">
             <a class="navbar-brand d-inline-flex align-items-center" href="#">
                 <img src="./assets/img/100logo.jpg" alt="Logo" width="60" height="60" class="me-2">
@@ -25,15 +26,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Sucursales">Sucursal</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <!-- Sección de Menú -->
+    <section id="inicio">
+        <h2 class="text-center">Bienvenido a El Aniquilador del Hambre</class=>
+        <p class="text-center">Disfruta de los mejores platillos de comida rápida.</p>
+    </section>
     <!-- Carrusel -->
     <div class="container mt-4">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -57,6 +62,11 @@
         </div>
     </div>
 
+<!-- Sección de Menú -->
+<section id="menu">
+    <h2 class="text-center">Nuestro Menú</h2>
+    <p class="text-center">Aquí te mostramos nuestras mejores opciones.</p>
+</section>
     <!-- Sección de tarjetas -->
     <div class="container mt-5">
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -126,6 +136,11 @@
             </div>
         </div>
     </div>
+    <!-- Sección de Historia -->
+<section id="Historia">
+    <h2 class="text-center">Historia</h2>
+    <p class="text-center">Conoce nuestra historia.</p>
+</section>
     <!-- Sección: Historia de la Empresa -->
     <div class="container mt-5">
     <h2 class="titulo-historia text-center mb-4">Nuestra Historia - 50 Años de Sabor</>
@@ -160,18 +175,23 @@
     </div>
 </div>
 <!-- Sección de Sucursales -->
+<section id="Sucursales">
+    <h2 class="text-center">Sucursal</h2>
+    <p class="text-center">Conoce donde estamos</p>
+</section>
+<!-- Sección de Sucursales -->
 <div class="container mt-5" style="background-color: #f8f9fa; padding: 30px; border-radius: 10px;">
     <h2 class="text-center mb-5" style="color: #ff5e01;">Nuestras Sucursales</h2>
 
     <!-- Primera Sucursal -->
-    <div class="row mb-4">
+    <div class="row">
         <div class="col-md-6">
-            <h3>Sucursal 1 - Calle Ficticia 123</h3>
-            <img src="./assets/img/sucursal1.jpg" alt="Sucursal 1" class="img-fluid mb-3">
-            <p>Teléfono: +1 (123) 456-7890</p>
+            <h3>Sucursal 1 - Aníbal Pinto 1313</h3>
+            <img src="./assets/img/sucursal1.webp" alt="Sucursal 1" class="img-fluid mb-3">
+            <p>Teléfono: (+56)956483947</p>
             <p>Correo: sucursal1@empresa.com</p>
-            <a href="https://www.google.com/maps" target="_blank" class="btn btn-primary">Ver en Mapa</a>
-            <p class="mt-3">Cómo llegar: Desde el centro de la ciudad, toma la calle X hasta llegar a la intersección con la calle Y.</p>
+            <a href="https://maps.app.goo.gl/V7QQM2sHnFE2fuc89" target="_blank" class="btn btn-primary">Ver en Mapa</a>
+            <p class="mt-3">Cómo llegar: Desde el centro de la ciudad, toma la calle principal hasta llegar a la intersección con la calle Bellavista.</p>
         </div>
         <div class="col-md-6">
             <div id="map1" style="height: 300px;"></div> <!-- Mapa de la sucursal 1 -->
@@ -179,13 +199,13 @@
     </div>
 
     <!-- Segunda Sucursal -->
-    <div class="row mb-4">
+    <div class="row mb-6">
         <div class="col-md-6">
-            <h3>Sucursal 2 - Avenida Ejemplo 456</h3>
+            <h3>Sucursal 2 - Av. Ramón Picarte 1840</h3>
             <img src="./assets/img/sucursal2.jpg" alt="Sucursal 2" class="img-fluid mb-3">
-            <p>Teléfono: +1 (098) 765-4321</p>
+            <p>Teléfono: (+56)923243544</p>
             <p>Correo: sucursal2@empresa.com</p>
-            <a href="https://www.google.com/maps" target="_blank" class="btn btn-primary">Ver en Mapa</a>
+            <a href="https://maps.app.goo.gl/3jfNh1UeWNnr65VE8" target="_blank" class="btn btn-primary">Ver en Mapa</a>
             <p class="mt-3">Cómo llegar: En la esquina de la Avenida Ejemplo, justo enfrente de la estación de tren.</p>
         </div>
         <div class="col-md-6">
@@ -235,15 +255,13 @@
     </form>
 </div>
 <!-- Información de Contacto -->
-<div class="container text-center mt-5" style="background-color: #f8f9fa; padding: 30px; border-radius: 10px;">
+<div class="container text-center mt-5" style="background-color: #919199; padding: 30px; border-radius: 10px;">
     <h4 style="color: #ff5e01;">¡Síguenos en nuestras Redes Sociales!</h4>
-    <p>Teléfono Sucursal 1: +1 (123) 456-7890 | Teléfono Sucursal 2: +1 (098) 765-4321</p>
-
-    <!-- Redes Sociales -->
-    <a href="https://www.facebook.com/empresa" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.instagram.com/empresa" class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-    <a href="https://www.twitter.com/empresa" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-</div>
+    <p>Teléfono Sucursal 1: (+56)956483947 | Teléfono Sucursal 2: (+56)923243544</p>
+<!-- Redes Sociales -->
+<a href="https://www.facebook.com/empresa" class="btn btn-social-icon btn-facebook" style="background-color: #3b5998; color: white; font-size: 24px; padding: 10px 15px; border-radius: 50%;"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/empresa" class="btn btn-social-icon btn-instagram" style="background-color: #e4405f; color: white; font-size: 24px; padding: 10px 15px; border-radius: 50%;"><i class="fab fa-instagram"></i></a>
+<a href="https://www.twitter.com/empresa" class="btn btn-social-icon btn-twitter" style="background-color: #1da1f2; color: white; font-size: 24px; padding: 10px 15px; border-radius: 50%;"><i class="fab fa-twitter"></i></a>
 <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
