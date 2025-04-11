@@ -21,6 +21,8 @@ body {
 
 /* Tarjetas */
 .card {
+    display: flex;
+    flex-direction: center;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     width: 18rem;
